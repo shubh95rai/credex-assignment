@@ -22,12 +22,14 @@ Built with **Next.js**, **Tailwind CSS**, **shadcn/ui**, **Framer Motion**, **Re
 - **Framer Motion**
 
 ## 🌐 Live Demo
-🔗 **[Credex – Software License Resale Website]()**  
+
+🔗 **[Credex – Software License Resale Website](https://credex-assignment-puce.vercel.app/)**
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/credex-assignment.git
-cd softsell
+git clone https://github.com/shubh95rai/credex-assignment.git
+cd credex-assignment
 npm install
 npm run dev
+```

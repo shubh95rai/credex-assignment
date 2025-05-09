@@ -7,7 +7,7 @@ import ChatWidget from "@/components/sections/ChatWidget";
 
 export default function Home() {
   return (
-    <main className="text-gray-800">
+    <main className="text-gray-800 overflow-x-hidden">
       <Hero />
 
       <HowItWorks />
