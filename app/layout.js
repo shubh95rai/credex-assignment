@@ -1,9 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { icons } from "lucide-react";
-import { ThemeProvider } from "@/components/themeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/sections/Navbar";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
