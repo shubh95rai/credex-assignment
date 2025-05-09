@@ -48,7 +48,7 @@ export default function ChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-10 right-10 z-50">
+    <div className="fixed bottom-5 right-5 sm:bottom-10 sm:right-10 z-50">
       {chatOpen && (
         <Button
           onClick={() => setChatOpen(!chatOpen)}
@@ -62,21 +62,21 @@ export default function ChatWidget() {
       {!chatOpen && (
         <Button
           onClick={() => setChatOpen(!chatOpen)}
-          className="px-6 py-7 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 hover:text-white transition-all duration-300 shadow-xl"
+          className="p-6 sm:p-7 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 hover:text-white transition-all duration-300 shadow-xl"
           variant="outline"
         >
-          <Bot className="size-8" />
+          <Bot className="sm:size-8 size-6" />
         </Button>
       )}
 
       {chatOpen && (
-        <div className="w-80 max-h-83 bg-white border shadow-lg rounded-md mt-2 flex flex-col">
+        <div className="w-72 sm:w-80 max-h-83 bg-white border shadow-lg rounded-md mt-2 flex flex-col">
           <div className="overflow-y-auto p-3">
             <div className="flex-1  space-y-4">
               {messages.map((msg, i) => (
                 <div
                   key={i}
-                  className={`text-sm ${
+                  className={`text-[13px] sm:text-sm ${
                     msg.role === "user" ? "text-right" : "text-left"
                   }`}
                 >
@@ -94,7 +94,7 @@ export default function ChatWidget() {
                   <Button
                     key={i}
                     onClick={() => handleFAQClick(faq)}
-                    className="w-full mb-2 text-sm bg-indigo-600 hover:bg-indigo-700"
+                    className="w-full mb-2 text-[13px] sm:text-sm bg-indigo-600 hover:bg-indigo-700"
                   >
                     {faq.question}
                   </Button>
