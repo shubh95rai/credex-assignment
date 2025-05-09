@@ -5,6 +5,7 @@ Built with **Next.js**, **Tailwind CSS**, **shadcn/ui**, **Framer Motion**, **Re
 ## 🚀 Features
 
 - ✅ Fully responsive single-page design
+- 🌗 Built-in Dark Mode support using shadcn/ui
 - ✨ Hero section with CTA
 - 🔁 “How It Works” 3-step guide
 - ⭐ “Why Choose Us” feature highlights
