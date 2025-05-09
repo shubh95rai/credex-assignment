@@ -12,8 +12,7 @@ export function ModeToggle() {
   return (
     <div>
       <Button
-        className="rounded-full"
-        variant="secondary"
+        variant="outline"
         size="icon"
         onClick={() =>
           setTheme((prev) => (prev === "light" ? "dark" : "light"))

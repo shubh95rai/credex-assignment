@@ -21,14 +21,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
-        <Navbar />
-        {children}
-        <Toaster
-          position="top-right"
-          offset={{
-            top: 70,
-          }}
-        />
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <Navbar />
+          {children}
+          <Toaster
+            position="top-right"
+            offset={{
+              top: 70,
+            }}
+          />
+        </ThemeProvider>
       </body>
     </html>
   );

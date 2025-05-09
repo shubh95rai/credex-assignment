@@ -10,7 +10,7 @@ const whyChooseUs = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 bg-gray-100 px-4 text-center">
+    <section className="py-16 bg-secondary px-4 text-center border-b">
       <AnimatedComponent>
         <h2 className="text-3xl font-semibold mb-10">Why Choose Us</h2>
         <div className="grid md:grid-cols-4 gap-6">

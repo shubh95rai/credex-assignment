@@ -8,7 +8,7 @@ const howItWorks = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-16 bg-white px-4 text-center border-t">
+    <section className="py-16 bg-card px-4 text-center border-t">
       <AnimatedComponent>
         <h2 className="text-3xl font-semibold mb-10">How It Works</h2>
         <div className="grid md:grid-cols-3 gap-8">

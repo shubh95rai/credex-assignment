@@ -15,7 +15,7 @@ export default function Navbar() {
         <p className="text-xl sm:text-2xl font-bold tracking-tight">Credex</p>
       </div>
 
-      {/* <ModeToggle /> */}
+      <ModeToggle />
     </nav>
   );
 }

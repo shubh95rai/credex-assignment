@@ -62,7 +62,7 @@ export default function ChatWidget() {
       {!chatOpen && (
         <Button
           onClick={() => setChatOpen(!chatOpen)}
-          className="p-6 sm:p-7 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 hover:text-white transition-all duration-300 shadow-xl"
+          className="p-6 sm:p-7 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-105 hover:text-white transition-all duration-300 shadow-xl dark:bg-indigo-600 dark:hover:bg-indigo-700"
           variant="outline"
         >
           <Bot className="sm:size-8 size-6" />
@@ -70,9 +70,9 @@ export default function ChatWidget() {
       )}
 
       {chatOpen && (
-        <div className="w-72 sm:w-80 max-h-83 bg-white border shadow-lg rounded-md mt-2 flex flex-col">
+        <div className="w-72 sm:w-80 max-h-83 bg-card border shadow-lg rounded-md mt-2 flex flex-col">
           <div className="overflow-y-auto p-3">
-            <div className="flex-1  space-y-4">
+            <div className="flex-1 space-y-4">
               {messages.map((msg, i) => (
                 <div
                   key={i}
@@ -82,7 +82,9 @@ export default function ChatWidget() {
                 >
                   <span
                     className={`inline-block px-3 py-2 rounded-lg ${
-                      msg.role === "user" ? "bg-blue-100" : "bg-gray-200"
+                      msg.role === "user"
+                        ? "bg-indigo-200 text-neutral-800"
+                        : "bg-secondary"
                     }`}
                   >
                     {msg.content}
@@ -94,7 +96,7 @@ export default function ChatWidget() {
                   <Button
                     key={i}
                     onClick={() => handleFAQClick(faq)}
-                    className="w-full mb-2 text-[13px] sm:text-sm bg-indigo-600 hover:bg-indigo-700"
+                    className="w-full mb-2 text-[13px] sm:text-sm bg-indigo-600 hover:bg-indigo-700 text-neutral-100"
                   >
                     {faq.question}
                   </Button>

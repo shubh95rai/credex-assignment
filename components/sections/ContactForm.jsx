@@ -71,7 +71,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-16 bg-gray-100 px-4 text-center">
+    <section className="py-16 bg-card px-4 text-center">
       <AnimatedComponent>
         <h2 className="text-3xl font-semibold mb-10">Get In Touch</h2>
 
