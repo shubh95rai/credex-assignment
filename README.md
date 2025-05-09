@@ -1,6 +1,6 @@
 # 🧾 Credex – Software License Resale Website
 
-SoftSell is a fictional software license resale startup landing page built with **Next.js**, **Tailwind CSS**, **shadcn/ui**, **Framer Motion**, **React Hook Form**, and **Zod**. It showcases clean design, responsive layout, and includes a basic chatbot simulation.
+Built with **Next.js**, **Tailwind CSS**, **shadcn/ui**, **Framer Motion**, **React Hook Form**, and **Zod**. It showcases clean design, responsive layout, and includes a basic chatbot simulation.
 
 ## 🚀 Features
 
@@ -14,19 +14,20 @@ SoftSell is a fictional software license resale startup landing page built with 
 
 ## 🛠 Tech Stack
 
-- [Next.js 15]
-- [Tailwind CSS]
-- [ShadCN]
-- [Framer Motion] 
-- [React Hook Form] 
-- [Zod]
+- **Next.js 15**
+- **Tailwind CSS**
+- **ShadCN**
+- **React Hook Form**
+- **Zod**
+- **Framer Motion**
 
 ## 🌐 Live Demo
 🔗 **[Credex – Software License Resale Website]()**  
 
 ## 📦 Installation
 
-git clone 
-cd credex
+```bash
+git clone https://github.com/yourusername/credex-assignment.git
+cd softsell
 npm install
 npm run dev
